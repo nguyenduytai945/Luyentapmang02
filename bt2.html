@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài tập2</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var n = prompt("chieu dai mang", "");
+    var Ar = Array();
+    var a = 0;
+    for (var j = 0; j < n; j++) {
+        a = prompt("nhap so thu " + j + "");
+        Ar.push(a);
+    }
+    document.write(Ar + "<br/>");
+    var first = 0;
+    var last = Ar.length - 1;
+    while (first < last) {
+        var b = Ar[first];
+        Ar[first] = Ar[last];
+        Ar[last] = b;
+        first++;
+        last--;
+    }
+    document.write(Ar);
+</script>
+
+</html>
